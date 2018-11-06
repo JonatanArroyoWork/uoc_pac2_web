@@ -1,0 +1,229 @@
+/*******************
+******estilos.css***
+********************/
+
+
+/***** ZONA COMÚN ***********/
+body{
+    /*netejem possibles marges del document*/
+    margin: 0;
+    padding: 0;
+    background-color: #F4F7F9;
+    font-family: serif;
+}
+h1{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 970px;
+    margin: 0px auto; /*centramos el contenido horitzontalmente*/
+    padding-bottom: 5px;/*aquest padding li donem al final de la plana CATALOGO
+                            peró li haurem de treure al final de la pàg.ARTICLE 
+                            en forma de marge negatiu*/
+    background-color: #FFFFFF;
+}
+
+/******************************
+******                 ********
+*****      ARTÍCULO    ********
+******                  *******
+******************************/
+
+/******************
+*** MENU SUPERIOR***
+*******************/
+
+.menuTop {
+    background-color: #C7B382; /*Color del Menú*/
+    /*delimitem el sombrejat interior del menu Top*/
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.menuTop ul{ /* Li treiem els punts a a la llista i centrem*/
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0px; /*Li creem un espai interior per dalt i per baix*/
+            
+}
+.menuTop ul li{ /*posicionem en linia els elements Li*/
+    display: inline;
+    padding: 20px 20px; /*espai superior i lateral de farcit per als elements del menu*/
+}
+.menuTop ul li:nth-child(2){ /*dibuixem la separació de menús amb les vores*/
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+.menuTop li a{
+    text-decoration: none; /*Li treiem efecte als vincles*/
+    color: #FFFFFF;
+}
+
+/******************
+*** PART CENTRAL ***
+*******************/
+
+.cos {
+    background-color: #FFFFFF;/*color de fons part central*/
+    padding: 10px; /*farcit intern*/
+}
+.titular{
+    background-color: #E1D1C1; 
+    margin: 0; /*netegem marges*/   
+    padding: 20px; /*farcit interior*/
+}
+
+.txtCabecera{
+    color:#C7B382;
+    padding: 20px 40px;/* emmarcat interior*/
+    font-weight: bold; /*text en negreta*/
+}
+blockquote:before, blockquote:after { /*obrim cometes*/
+    content: open-quote;/*simbol d'obrir cometes*/
+    font-weight: bold;
+    font-size: 24px;
+    color: #BBBEBF;
+    
+    }
+.txtCuadroGris{/*estil per les caixes de les cites*/
+    display: block;/*no volem mes elemnts en la linia*/
+    background-color: #F4F7F9;/*color de fons*/
+    margin: 0 25%;/*Volem centrar horitzontalment*/
+    padding: 10px;/*marge intern*/
+    border-left: 2px solid #BBBEBF;/*vora esquerra*/
+}
+
+blockquote:after  { /*tanquem cometes*/
+    content: close-quote; 
+    font-weight: bold;
+    font-size: 24px;
+    color: #BBBEBF;
+}
+.negrita{
+    font-weight: bold;/*text en negreta*/
+}
+#fotoBox{ /*estil de la caixa en que hem ficat la foto*/
+    padding: 25px; /* farcit interior */
+    display: block; /*ocupa tota la liniea*/
+    margin: 0 auto; /*centrem horitzontalment*/
+    width: 47%; /*li donem la amplada proporcional*/
+}
+#fotoBox img{
+    width: 100%;/*fem que la foto ocupi tot l'ample de la caixa*/
+}
+.fotoCaption{
+    display: block;/*fem que ocupi tot el bloc per poder centrar*/
+    text-align: center;/*centrem el text*/
+}
+
+.boldGris{
+    margin: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #576375;
+    border-bottom: 1px dashed #000000;  /*la bora inferior amb ratlletes*/
+}
+.listBox{
+    border-left: 1px solid #000000; /* ratlles als costats de la capsa*/
+    border-right:1px solid #000000;
+    width: 50%; /*amplada d'un 50% de la caixa que el conté*/
+    margin: 0 auto;/*centrem horitzontalment*/
+}
+.listBox ol li a{ /*text de les llistes*/
+    text-decoration: none;/*netejem l'estil per defecte*/
+    color: 	#5F9EA0;
+    font-style: italic;
+    
+}
+#footerBox{ /* la capsa que fa de footes*/
+    background-color: #C7B382;
+    padding: 10px;/* marge intern*/
+    margin-bottom: -5px; /*corregim l'espai que em generat amb el padding del container*/
+}
+.fotoFoot{
+    display: inline;/*volem més contingut a continuacio*/
+    width: 20%;/*l'altre element de la linian tindrà un 80% d'amplada*/
+    float: left;/* la fem flotar a l'esquerra*/
+}
+.fotoFoot img{
+    width: 50%; /*la meitat de la seva capsa*/
+    padding: 30px 30px;/* marc intern*/
+   
+}
+.textFoot{
+    color: #FFFFFF;
+    display: inline-block;/* en la mateixa linia que el fotoFoot i tanquem*/
+    width: 80%;
+}
+.textFoot span{
+    text-decoration: underline;
+}
+
+
+/******************************
+******                 ********
+*****      TECNOLOGIAS  ********
+******                  *******
+******************************/
+
+
+#titolTecnologia{
+    font-family: serif;
+    font-size: 28px;
+    text-align: center;/*centrem el titols*/
+    padding: 20px;
+}
+
+dl{
+    padding: 0 100px 100px 100px; /* farcit intern*/
+    text-align: justify;
+    line-height: 1.5em;
+}
+dt{
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 2px dotted #000000; /* linia de punts */
+}
+dd{
+    
+}
+
+/******************************
+******                 ********
+*****      CATALOGO    ********
+******                  *******
+******************************/
+
+#titolCatalogo{
+    font-family: serif;
+    font-size: 28px;
+    text-align: center;/*centrem el titols*/
+    padding: 40px 20px 20px 20px;
+}
+
+.listaNivel1{ /*creem el quadre daurat*/
+    margin: 20px 200px; /*del quadre cap a fora*/
+    padding-top: 50px ; /* del quadre cap a dintre*/
+    padding-bottom: 50px;
+    border: 2px solid #C7B382;   /* esttil de les vores*/ 
+}
+.listaNivel1 .tituloNivel1{
+    font-weight: bold;
+}
+
+.boxCatalogo  ul {
+    list-style: none;/*llista sense indexos*/
+    line-height: 2.5em;/*separació entre linies*/
+}
+.boxCatalogo ul li img {
+    display: inline-block; /*ajudarem  a centrar la imatge amb un marge negatiu*/
+    margin-bottom: -15px;
+}
+.boxCatalogo ul li a {
+    text-decoration: none; /*fem neteja de l'estil*/
+    color: #C7B382
+}
+
+
